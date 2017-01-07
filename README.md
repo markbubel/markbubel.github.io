@@ -1,2 +1,2 @@
 # markbubel.github.io
-My personal portfolio
+My portfolio
