@@ -1,5 +1,7 @@
 /* Structure */
-body {margin-top:5%;}
+body {
+  margin-top: 5%;
+  }
 
 /* Menu  */
 ul {
@@ -17,5 +19,3 @@ li {
 li:last-child {
   margin-right:0px;
 }
-
-li a { text-decoration: none; }
