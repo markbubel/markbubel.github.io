@@ -4,16 +4,16 @@ body {
   }
 
 /* Menu  */
-ul {
+ul.main-nav {
     list-style-type: none;
     margin: 0;
+    margin-bottom:15%;
     padding: 0;
 }
 
 li {
     display: inline;
     margin-right: 10px;
-    background: #efefef;
 }
 
 li:last-child {
