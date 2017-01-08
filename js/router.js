@@ -3,7 +3,16 @@ const HOME_PARTIAL = "home"; // home partial filename
 function load() {
     let path = getPath();
     if(path === "" || path === undefined) path = HOME_PARTIAL;
-    document.getElementById("content").innerHTML = `<object type="text/html" data="partials/${path}.html"></object>`;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("content").innerHTML =
+        this.responseText;
+        }
+    };
+    xhttp.open("GET", `partials/${path}.html`, true);
+    xhttp.send();
 };
 
 function getPath() {
