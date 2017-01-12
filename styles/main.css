@@ -25,3 +25,5 @@ body {
 .main-nav li:last-child {
   margin-right:0px;
 }
+
+footer { margin-top:5%; }
