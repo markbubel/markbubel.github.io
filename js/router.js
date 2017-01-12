@@ -1,3 +1,5 @@
+// Code from https://github.com/cbubel/template-loader
+
 const HOME_PARTIAL = "home"; // home partial filename
 
 function load() {
