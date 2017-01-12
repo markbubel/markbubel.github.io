@@ -10,18 +10,18 @@ body {
 }
 
 /* Menu  */
-ul.main-nav {
+.main-nav {
     list-style-type: none;
     margin: 0;
     margin-bottom:15%;
     padding: 0;
 }
 
-li {
+.main-nav li {
     display: inline;
     margin-right: 10px;
 }
 
-li:last-child {
+.main-nav li:last-child {
   margin-right:0px;
 }
