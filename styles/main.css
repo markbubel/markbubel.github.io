@@ -1,7 +1,12 @@
 /* Structure */
 body {
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   }
+
+.tagline {
+  background-color: #efefef;
+  padding:1%;
+}
 
 /* Menu  */
 ul.main-nav {
