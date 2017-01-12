@@ -1,2 +1,2 @@
 # markbubel.github.io
-My portfolio showing user experience work.
+My portfolio of both professional and gradute school user experience work.
