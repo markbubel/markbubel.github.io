@@ -3,9 +3,10 @@ body {
   /*margin-top: 5%;*/
   }
 
-.tagline {
-  background-color: #efefef;
-  padding:1%;
+.special-header {
+  background: #efefef;
+  font-size: 1.5rem;
+  padding: 1%;
 }
 
 /* Menu  */
