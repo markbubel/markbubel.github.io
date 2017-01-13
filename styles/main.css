@@ -32,7 +32,13 @@ body {
   border-bottom: 1px solid #4078c0;
 }
 
-p, li, a, .special-header { font-family: 'Raleway', sans-serif; 
+p, li, a, .special-header {
+   font-family: 'Raleway', sans-serif; 
+}
+
+.summary-highlight {
+  background: #efefef;
+  padding: 1%;
 }
 
 footer { margin-top:5%; }
