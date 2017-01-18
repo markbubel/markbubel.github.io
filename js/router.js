@@ -22,6 +22,10 @@ function getPath() {
     return window.location.href.split("#/")[1];
 };
 
+function changeTitle() {
+    console.log(document.title);
+}
+
 window.onhashchange = function(event) {
     event.preventDefault();
     load();
