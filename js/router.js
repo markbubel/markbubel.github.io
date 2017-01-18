@@ -1,5 +1,3 @@
-// Code from https://github.com/cbubel/template-loader
-
 const HOME_PARTIAL = "home"; // home partial filename
 
 function load() {
@@ -23,7 +21,21 @@ function getPath() {
 };
 
 function changeTitle() {
-    console.log(document.title);
+    var title = getPath();
+    if ( title.search("/") === -1) {
+        document.title = capFirstChar(title) + ":" + " " + "UX Portfolio of Mark Bubel";
+    }
+    else {
+        var slashPos = title.search("/");
+        var theString = title.slice(slashPos+1, title.length-1);
+        document.title = theString;
+    }
+};
+
+function capFirstChar(str) {
+    var first = str.charAt(0);
+    var rest = str.slice(1);
+    str = first.toUpperCase() + rest;
 };
 
 window.onhashchange = function(event) {
