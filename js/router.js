@@ -24,7 +24,7 @@ function getPath() {
 
 function changeTitle() {
     console.log(document.title);
-}
+};
 
 window.onhashchange = function(event) {
     event.preventDefault();
