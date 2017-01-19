@@ -46,4 +46,5 @@ window.onhashchange = function(event) {
 window.onload = function(event) {
     event.preventDefault();
     load();
+    changeTitle();
 };
