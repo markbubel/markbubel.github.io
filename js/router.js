@@ -1,8 +1,11 @@
 const HOME_PARTIAL = "home"; // home partial filename
 
-function load() {
+function load(callback) {
     let path = getPath();
-    if(path === "" || path === undefined) path = HOME_PARTIAL;
+    if(path === "" || path === undefined) {
+        path = HOME_PARTIAL;
+        callback();
+    }
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
