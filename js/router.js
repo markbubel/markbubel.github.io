@@ -38,12 +38,14 @@ function changeTitle() {
 
 function changeTitle() {
     const path = getPath();
-    if(path === "" || path === undefined) {
-        document.title = "UX Portfolio of Mark Bubel";
+    const base = 'UX Portfolio of Mark Bubel';
+    if(path === "") {
+        document.title = base;
+        return;
     }
     const s = path.split('/');
     const title = s[s.length - 1];
-    document.title = `${capFirstChar(title)} : UX Portfolio of Mark Bubel`;
+    document.title = `${capFirstChar(title)} : ${base}`;
 };
 
 function capFirstChar(str) {
