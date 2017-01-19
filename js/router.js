@@ -34,8 +34,8 @@ function changeTitle() {
 
 function capFirstChar(str) {
     var first = str.charAt(0);
-    var rest = str.slice(1);
-    str = first.toUpperCase() + rest;
+    var remaining = str.slice(1);
+    str = first.toUpperCase() + remaining;
 };
 
 window.onhashchange = function(event) {
@@ -45,6 +45,5 @@ window.onhashchange = function(event) {
 
 window.onload = function(event) {
     event.preventDefault();
-    load();
-    changeTitle();
+    load(() => {changeTitle()});
 };
