@@ -4,12 +4,12 @@ function load(callback) {
     let path = getPath();
     if(path === "" || path === undefined) {
         path = HOME_PARTIAL;
-        callback();
     }
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+        callback();
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         document.getElementById("content").innerHTML =
         this.responseText;
