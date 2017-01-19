@@ -15,8 +15,8 @@ function load() {
         this.responseText;
         }
 
-        else (this.readyState == 4 && this.status === 404) {
-            document.getElementById("content").innerHTML = "Oops... that page doens't exist. Try again!";
+        else if (this.readyState == 4 && this.status === 404) {
+            document.getElementById("content").textContent = "Oops... that page doens't exist. Try again!";
             return;
         }
     };
