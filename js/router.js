@@ -10,6 +10,7 @@ function load(callback) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
         callback();
+        console.log(callback());
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         document.getElementById("content").innerHTML =
         this.responseText;
