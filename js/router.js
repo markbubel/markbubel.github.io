@@ -14,6 +14,8 @@ function load() {
         document.getElementById("content").innerHTML =
         this.responseText;
         }
+
+        if (this.status === 404) {console.log(statusText);}
     };
     xhttp.open("GET", `partials/${path}.html`, true);
     xhttp.send();
