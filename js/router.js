@@ -38,6 +38,9 @@ function changeTitle() {
 
 function changeTitle() {
     const path = getPath();
+    if(path === "" || path === undefined) {
+        document.title = "UX Portfolio of Mark Bubel";
+    }
     const s = path.split('/');
     const title = s[s.length - 1];
     document.title = `${capFirstChar(title)} : UX Portfolio of Mark Bubel`;
