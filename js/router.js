@@ -15,7 +15,10 @@ function load() {
         this.responseText;
         }
 
-        if (this.status === 404) {console.log(this.statusText);}
+        if (this.readyState == 4 && this.status === 404) {
+            document.getElementsByClassName("404msg").innerHTML = "Oops... that page doens't exist. Try again!";
+            return;
+        }
     };
     xhttp.open("GET", `partials/${path}.html`, true);
     xhttp.send();
