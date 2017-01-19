@@ -22,19 +22,6 @@ function load() {
 function getPath() {
     return window.location.href.split("#/")[1];
 };
-/*
-function changeTitle() {
-    var title = getPath();
-    if ( title.search("/") === -1) {
-        document.title = `${capFirstChar(title)} : UX Portfolio of Mark Bubel`;
-    }
-    else {
-        var slashPos = title.search("/");
-        var theString = title.slice(slashPos+1, title.length-1);
-        document.title = theString;
-    }
-};
-*/
 
 function changeTitle() {
     const path = getPath();
