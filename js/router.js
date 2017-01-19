@@ -40,7 +40,7 @@ function changeTitle() {
     const path = getPath();
     const base = 'UX Portfolio of Mark Bubel';
     if(path === "" || path === undefined) {
-        document.title = base;
+        document.title = `Home : ${base}`;
         return;
     }
     const s = path.split('/');
