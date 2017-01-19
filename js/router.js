@@ -15,7 +15,7 @@ function load() {
         this.responseText;
         }
 
-        if (this.status === 404) {console.log(statusText);}
+        if (this.status === 404) {console.log(this.statusText);}
     };
     xhttp.open("GET", `partials/${path}.html`, true);
     xhttp.send();
