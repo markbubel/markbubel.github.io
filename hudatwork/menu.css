@@ -1,0 +1,189 @@
+
+
+/*MENU*/
+
+/*.sf-menu > li > ul > li > a,
+.sf-menu > li > ul > li > ul > li > a, 
+.sf-menu > li > ul > li > ul > li > ul > li > a, 
+.sf-menu > li > ul > li > ul > li > ul > li > ul > li > a {
+	color:white;
+}*/
+
+
+/*#nav li:hover a, #nav li a:hover, #nav a:focus, #nav a:active {
+	color:white;
+}*/
+
+.sf-menu li.sfHover > a {
+	color:white;
+}
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 50;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float: left;
+	margin-bottom: 1em;
+}
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 15em; /* allow long menu items to determine submenu width */
+	*width: 15em; /* no auto sub width for IE7, see white-space comment below */
+}
+.sf-menu a {	
+	/*border-top: 1px solid #dFeEFF; fallback colour must use full shorthand */
+	/*border-top: 1px solid rgba(255,255,255,.5);*/
+	padding: 1em 1.1em;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+
+.sf-menu > li > ul > li > a,
+.sf-menu > li > ul > li > ul > li > a,
+.sf-menu > li > ul > li > ul > li > ul > li > a,
+.sf-menu > li > ul > li > ul > li > ul > li > ul > li > a {	
+	/*border-top: 1px solid #dFeEFF; fallback colour must use full shorthand */
+	/*border-top: 1px solid rgba(255,255,255,.5);*/
+	padding: 5px 1.1em;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+
+
+.current > ul > li > a,
+.current > ul > li > ul > li > a {
+	/*border-top: 1px solid #dadada;*/
+	border-left: 1px solid #dadada;
+}
+
+
+.sf-menu a {
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.sf-menu li {
+	background: #92c583;
+	border-right: #7bb26b;
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.sf-menu ul li {
+	background: #92c583;
+	border-right: 1px solid #7bb26b;
+
+}
+.sf-menu ul ul li {
+	background: #92c583;
+	border-right: 1px solid #7bb26b;
+	border-left: 1px solid #7bb26b;
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover, .sf-menu a:hover {
+	background: #429b57;
+	color: #ffffff !important;
+	/* only transition out, not in 
+	-webkit-transition: none;
+	transition: none;*/
+
+}
+
+/*** arrows (for all except IE7) **/
+/*.sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) 
+}*/
+
+.sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements)*/ 
+
+}
+
+.arrow:after .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements)*/ 
+
+}
+
+/* styling for both css and generated arrows */
+.sf-arrows .arrow:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;	
+	border-left: 5px solid white;
+	/*border-top-color: white;*/ /* edit this to suit design (no rgba in IE8) */
+
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after, .arrows:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: white; /* edit this to suit design (no rgba in IE8) */
+	/*border-left-color: rgba(255,255,255,.5);*/
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}
+
+.sf-menu li .sf-sub-indicator {
+display: none;
+}
+.sf-menu li li .sf-sub-indicator {
+display: block;
+}
+
+/*END MENU*/
