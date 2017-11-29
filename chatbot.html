@@ -33,9 +33,17 @@ layout: home
 </ol>
 
 <h2 id="discovery">Motivation</h2>
+<p>Federal government is starting to catch on to the private industry’s infatuation with new technologies like artificial intelligence, machine learning, and blockchain.</p>
+<p>HUD hasn’t considered the use of AI technology yet to improve service delivery, for example. Of course, just because we’re not using AI doesn’t mean we need to start just to keep up with other agencies. GSA is a great example of AI being used. </p>
+<p>However, our research shows from the CRM project that HUD may actually benefit from a chatbot service, specifically to improve customer service. I decided to start brainstorming ways in which a chatbot could help HUD:</p>
 
-
-
+<ol>
+    <li>Our customer services research shows that the CRM is a welcome addition for staff in terms of tracking call metrics and having a singular view of the customer. However, they’re worried about duplicative or extra work. A chatbot could help automate some of the customer data collection and create records in the CRM on the behalf of HUD CSR’s, we could free them up to time-sensitive and resource-intensive tasks.</li>
+    <li>Next up, a chatbot could help citizens find information at the medium they want. This is about allowing people to have choices and flexibility when contacting HUD for help and information. Right now, they can visit the website, or call us, really for the main options. I believe HUD needs to expand its digital presence and information to other channels, like Facebook Messenger, email, and text message, allowing that information to be accessed on demand.</li>
+    <li>Helping find information on the website: HUD.gov’s website doesn’t always make it easy for a regular citizen without knowledge of HUD to find the correct resource, or understand it, or know what to do next to complete their goal. I think the chatbot can help facilitate information seeking on the website.</li>
+    <li>Facilitating warm handoffs: imagine a scenario where the bot can’t answer a person’s question. This is where a HUD CSR person could join the conversation and take over, while the bot listens in the background. This is a better experience than just putting a bot out there that’s not helpful when it can’t answer questions. Trust in the bot could be negatively impacted.
+        A citizen asking the bot check on statuses or outcomes connected to other data sources and possibly reduce the number of calls HUD or a PHA may receive.</li>
+</ol>
 
 <h2 id="interviews">Prototyping the bot</h2>
 <p>I wanted to quickly get a test bot up and running, and after comparing multiple bot frameworks and services, I settled on Microsoft’s Bot Framework.</p>
@@ -61,9 +69,25 @@ layout: home
 
 <p>However, the bot is for the citizen, and we need to test it with citizens.</p>
 
-<h2 id="design">Next steps</h2>
+<div class="row">
+    <div class="col">
+        <h2 id="design">Next steps</h2>
+        
+        <p>The next step we need to take is usability testing the chat bot. The bot web page includes a link to a very short survey, but we need to start collecting many responses of questions/answers to see what kind of questions people want to find out, if the bot can handle those questions, and if the bot needs changes. For example, the conversation is completely free-flowing right now, but we could add to the to UI to include buttons or menus to give  a structured path to find information. Is that better? Testing it will help us understand these things.
+        </p>
+        <p>Beyond user testing, I would like to collect quantitative data as well. To do that, the chat bot needs to live on one of our public websites or as a live Facebook messenger bot. These options are currently being considered.</p>
 
-<p>The next step we need to take is usability testing the chat bot. The bot web page includes a link to a very short survey, but we need to start collecting many responses of questions/answers to see what kind of questions people want to find out, if the bot can handle those questions, and if the bot needs changes. For example, the conversation is completely free-flowing right now, but we could add to the to UI to include buttons or menus to give  a structured path to find information. Is that better? Testing it will help us understand these things.
-</p>
-<p>Beyond user testing, I would like to collect quantitative data as well. To do that, the chat bot needs to live on one of our public websites or as a live Facebook messenger bot. These options are currently being considered.</p>
+    </div>
+    <div class="col">
+        <figure class="figure">
+            <img class="figure-img  img-fluid" src="assets/images/FbChatBotHero.png" style="max-width: 100%; height: auto;" alt="Brainstorming">
+            <figcaption class="figure-caption">Chat bot running on Facebook Messenger</figcaption>
+        </figure>
+        
+    </div>
+</div>
+
+
+
+
 
