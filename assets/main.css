@@ -1,4 +1,14 @@
 body {
-    background-color: #D2D7D3;
-    background-color: #000000;
+    background-color: #ECF0F1 !important;
+}
+
+::selection {
+    background-color:#446CB3;
+    color:#E4F1FE;
+}
+
+.blockquote {
+    border-left:4px solid #446CB3;
+    padding-left:10px;
+    background-color:#E4F1FE;
 }
