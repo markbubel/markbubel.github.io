@@ -219,15 +219,17 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #AC0B0B;
   text-decoration: none;
+  border-bottom: 1px solid #AC0B0B;
+  padding-bottom: 0.1em;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
+  border-bottom: none;
 }
 
 a:not([href]):not([tabindex]) {
