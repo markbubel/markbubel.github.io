@@ -1,10 +1,9 @@
 body {
-    background-color: #ECF0F1 !important;
 }
 
 ::selection {
-    background-color:#446CB3;
-    color:#E4F1FE;
+    background-color:#AC0B0B;
+    color:#ffffff;
 }
 
 .blockquote {
