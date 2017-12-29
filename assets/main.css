@@ -50,7 +50,14 @@
     border-bottom:none;
 }
 
-a {color: #AC0B0B;}
+a {
+    color: #AC0B0B;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(146, 45, 45);
+}
 
 .img {
     max-width: 100%;
