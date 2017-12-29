@@ -8,6 +8,25 @@
     padding-left:10px;
 }
 
+.masthead {
+    margin-bottom:2em;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin-right:30px;
+}
+
+.home-page-col {
+    text-align: center;
+}
+
 .add-margin {
     margin-top: 4em;
     margin-bottom: 4em;
@@ -29,4 +48,15 @@
 .special-link {
     font-size:2em;
     border-bottom:none;
+}
+
+a {color: #AC0B0B;}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-img {
+    border-radius:50%;
 }
