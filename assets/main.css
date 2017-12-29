@@ -6,7 +6,6 @@
 .blockquote {
     border-left:4px solid #446CB3;
     padding-left:10px;
-    background-color:#E4F1FE;
 }
 
 .add-margin {
@@ -25,4 +24,9 @@
 
 .text-center {
     margin-bottom:2em;
+}
+
+.special-link {
+    font-size:2em;
+    border-bottom:none;
 }
