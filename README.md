@@ -1,2 +1,6 @@
 # markbubel.github.io
-My design portfolio
+My product design portfolio
+
+Email: mark.bubel@icloud.com
+LinkedIn: https://www.linkedin.com/in/markbubel/
+Website: markbubel.com
