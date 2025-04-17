@@ -1,13 +1,60 @@
+/* Modern CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
 body {
     margin:0;
     display: flex;
     justify-content: center;
     padding: 2rem;
-   
     font-family: system-ui, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -17,4 +64,16 @@ main {
 
 a {
     color: #0C25FF;
+}
+
+.introduction {
+    margin-bottom: 4rem;
+}
+
+.contact {
+    margin-bottom: 4rem;
+}
+
+.work {
+    margin-bottom: 4rem;
 }
