@@ -41,14 +41,16 @@ ol {
 /* Custom CSS */
 
 :root {
-    --spacing-xl: 4em; /* 64px */ 
-    --spacing-large: 2.5rem; /* 40px */
-    --spacing-small: 0.5rem; /* 8px */
-    --spacing-none: 0rem; /* 0px */
+    --spacing-xl: 4em;           /* 64px */ 
+    --spacing-large: 2.5rem;    /* 40px */
+    --spacing-medium: 1.25rem; /* 20px */
+    --spacing-small: 0.5rem;  /* 8px */
+    --spacing-none: 0rem;    /* 0px */
 
-
-
-    --interaction-color: #0C25FF;
+    --color-bg: #fff;
+    --color-text-primary: #222222;
+    --color-text-secondary: #595959;
+    --color-accent: #1E8E3E;
 
     --font-base: 1rem;
     --font-large: 1.5rem;
@@ -67,8 +69,8 @@ body {
     font-family: system-ui, sans-serif;
     font-size: var(--font-base);
     line-height: var(--line-height-base);
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -86,6 +88,8 @@ h1 {
 h2 {
     font-size: var(--font-large);
     line-height: var(--line-height-tight);
+    margin-top: var(--spacing-none);
+    margin-bottom: var(--spacing-medium);
 }
 
 h3 {
@@ -96,7 +100,8 @@ h3 {
 }
 
 a {
-    color: var(--interaction-color);
+    color: var(--color-accent);
+    text-decoration: underline;
 }
 
 .space-large {
@@ -115,4 +120,8 @@ a {
 .about-me-c p,
 .about-me-d p {
   margin-top: var(--spacing-small);
+}
+
+footer {
+  color: var(--color-text-secondary);
 }
