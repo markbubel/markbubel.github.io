@@ -84,7 +84,7 @@ ol {
 /* Custom CSS */
 
 :root {
-    --spacing-xl: 4em;           /* 64px */ 
+    --spacing-xl: 3rem;          /* 48px */ 
     --spacing-large: 2.5rem;    /* 40px */
     --spacing-medium: 1.25rem; /* 20px */
     --spacing-small: 0.5rem;  /* 8px */
