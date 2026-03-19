@@ -86,8 +86,9 @@ ol {
 :root {
     --spacing-xl: 3rem;          /* 48px */ 
     --spacing-large: 2.5rem;    /* 40px */
-    --spacing-medium: 1.25rem; /* 20px */
-    --spacing-small: 0.5rem;  /* 8px */
+    --spacing-medium: 1.25rem;  /* 20px */
+    --spacing-base: 1rem;      /* 16px */
+    --spacing-small: 0.5rem;   /* 8px */
     --spacing-none: 0rem;    /* 0px */
 
     --color-bg: #fff;
@@ -129,6 +130,7 @@ body {
     color: var(--color-text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 main {
@@ -141,7 +143,7 @@ h1 {
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-tight);
     margin-top: var(--spacing-none);
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacing-base);
 }
 
 h2 {
@@ -206,13 +208,106 @@ footer {
 }
 
 
+/* Dark mode — applied via class or system preference */
+html.dark body {
+  background-color: #111111;
+  color: #ACACAC;
+}
+
+html.dark a {
+  color: var(--color-accent);
+}
+
+html:not(.light):not(.dark) body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
 @media (prefers-color-scheme: dark) {
-  body {
+  html:not(.light):not(.dark) body {
     background-color: #111111;
     color: #ACACAC;
   }
 
-  a {
+  html:not(.light):not(.dark) a {
     color: var(--color-accent);
   }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.2s ease;
+  z-index: 100;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: var(--color-text-primary);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Dark mode toggle styles */
+html.dark .theme-toggle,
+html:not(.light):not(.dark) .theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .theme-toggle:hover,
+html:not(.light):not(.dark) .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+html.dark .theme-toggle svg {
+  stroke: #ACACAC;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.light):not(.dark) .theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  html:not(.light):not(.dark) .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  html:not(.light):not(.dark) .theme-toggle svg {
+    stroke: #ACACAC;
+  }
+}
+
+html.light .theme-toggle {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+html.light .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+html.light .theme-toggle svg {
+  stroke: var(--color-text-primary);
 }
